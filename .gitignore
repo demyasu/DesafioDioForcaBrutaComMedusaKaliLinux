@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Node / Cypress
+node_modules/
+cypress/videos/
+cypress/downloads/
+*.log
