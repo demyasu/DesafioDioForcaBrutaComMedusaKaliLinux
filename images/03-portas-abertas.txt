@@ -1,0 +1,25 @@
+EVIDENCIA 03 - Portas TCP abertas no alvo 192.168.56.101
+Data: 20/11/2026
+Metodo: teste de conexao TCP (TcpClient.BeginConnect, timeout 400ms) a partir do host Windows
+
+Portas abertas confirmadas:
+21/tcp    open   ftp             vsFTPd 2.3.4
+22/tcp    open   ssh
+23/tcp    open   telnet
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http            Metasploitable2 (DVWA em /dvwa/)
+111/tcp   open   rpcbind
+139/tcp   open   netbios-ssn
+445/tcp   open   microsoft-ds    Samba
+512/tcp   open   exec
+513/tcp   open   login
+514/tcp   open   shell
+3306/tcp  open   mysql
+5432/tcp  open   postgresql
+5900/tcp  open   vnc
+6000/tcp  open   X11
+
+Portas testadas e fechadas: 8000, 8080, 8181
+
+Comando equivalente sugerido no Kali: nmap -sV -Pn 192.168.56.101

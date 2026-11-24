@@ -1,0 +1,16 @@
+=== CT-07: DVWA login manual via curl ===
+GET /dvwa/ ->
+HTTP 302
+
+POST login admin/password ->
+HTTP/1.1 302 Found
+Date: Fri, 20 Nov 2026 06:09:37 GMT
+Server: Apache/2.2.8 (Ubuntu) DAV/2
+X-Powered-By: PHP/5.2.4-2ubuntu5.10
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: index.php
+Content-Length: 0
+Content-Type: text/html
+

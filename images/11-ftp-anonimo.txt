@@ -1,0 +1,11 @@
+=== CT-05: FTP anonimo ===
+Connected to 192.168.56.101.
+220 (vsFTPd 2.3.4)
+331 Please specify the password.
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+229 Entering Extended Passive Mode (|||42303|).
+150 Here comes the directory listing.
+226 Directory send OK.
+221 Goodbye.

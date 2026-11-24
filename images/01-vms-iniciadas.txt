@@ -1,0 +1,16 @@
+EVIDENCIA 01 - VMs iniciadas e estado verificado
+Data: 20/11/2026
+Comando: & 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' list runningvms
+
+Saída real:
+"kali-linux-2026.3-virtualbox-amd64" {2d792251-94c7-41f0-95e5-5ebf008983b2}
+"Metasploitabl" {3d04bed5-0367-4ee4-b956-378de6aceb33}
+
+Comando: showvminfo (machinereadable) filtrado por VMState
+Saída real:
+VMState="running"   (kali-linux-2026.3-virtualbox-amd64)
+VMState="running"   (Metasploitabl)
+
+Observações:
+- VMs Windows 10 e "Kali iso" permanecem desligadas (fora do escopo do ataque).
+- Inicialização feita em modo headless via VBoxManage startvm --type headless.

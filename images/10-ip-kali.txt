@@ -1,0 +1,21 @@
+=== CT-02: identidade e IP do Kali ===
+kali
+    inet 127.0.0.1/8 scope host lo
+    inet 192.168.56.102/24 brd 192.168.56.255 scope global dynamic noprefixroute eth0
+
+=== CT-03: conectividade com o alvo 192.168.56.101 ===
+PING 192.168.56.101 (192.168.56.101) 56(84) bytes of data.
+64 bytes from 192.168.56.101: icmp_seq=1 ttl=64 time=0.567 ms
+64 bytes from 192.168.56.101: icmp_seq=2 ttl=64 time=0.707 ms
+
+--- 192.168.56.101 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1005ms
+rtt min/avg/max/mdev = 0.567/0.637/0.707/0.070 ms
+
+=== MAC do alvo (ARP) ===
+192.168.56.101   0x1         0x2         08:00:27:81:bf:53     *        eth0
+ime 1001ms
+  rtt min/avg/max/mdev = 0.557/0.895/1.233/0.338 ms
+
+Observacao: se o IP aparecer como 10.0.2.15/24, a VM em uso e a "Kali iso" (NAT).
+Nesse caso, use a VM kali-linux-2026.3-virtualbox-amd64 (host-only).

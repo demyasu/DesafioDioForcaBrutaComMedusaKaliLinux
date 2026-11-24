@@ -1,0 +1,14 @@
+{
+  "name": "desafio-medusa-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automacao visual do desafio DIO: terminal Kali digitavel + DVWA no Cypress",
+  "scripts": {
+    "open": "cypress open",
+    "run": "cypress run --browser electron",
+    "verify": "cypress verify"
+  },
+  "devDependencies": {
+    "cypress": "14.3.2"
+  }
+}

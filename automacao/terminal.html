@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Kali Linux — Terminal de Execução do Desafio</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0b0f14; color: #d6e2ea;
+    font-family: Consolas, "Courier New", monospace; font-size: 15px;
+  }
+  .barra {
+    background: #252b33; padding: 9px 14px; color: #9fb0bd;
+    border-bottom: 1px solid #39434e;
+  }
+  .ponto { display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:6px; }
+  .vermelho { background:#ff5f56; } .amarelo { background:#ffbd2e; } .verde { background:#27c93f; }
+  #terminal {
+    height: calc(100vh - 42px); overflow-y: auto; padding: 18px 20px;
+    line-height: 1.55; white-space: pre-wrap; word-break: break-all;
+  }
+  .prompt { color: #56dc82; font-weight: bold; }
+  #comando { color: #ffffff; }
+  #cursor { display:inline-block; width:9px; height:17px; background:#56dc82; vertical-align:-3px; animation: pisca 1s steps(1) infinite; }
+  @keyframes pisca { 50% { opacity: 0; } }
+  #saida { color: #c9d4dd; margin: 6px 0 16px 0; }
+  .rodape { position: fixed; bottom: 6px; right: 14px; color: #55626d; font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="barra">
+    <span class="ponto vermelho"></span><span class="ponto amarelo"></span><span class="ponto verde"></span>
+    kali@kali: ~ — desafio-medusa
+  </div>
+  <div id="terminal">
+    <div>Último login: qui 20 nov 2026 01:08:29 EST 2026 em tty1</div>
+    <div style="color:#66737e">Ambiente: Kali Linux · 192.168.56.102 · alvo 192.168.56.101 · Host-Only isolada</div>
+    <br>
+    <div><span class="prompt">kali@kali:~$</span> <span id="comando"></span><span id="cursor"></span></div>
+    <pre id="saida"></pre>
+  </div>
+  <div class="rodape">Comandos executados de verdade via VBoxManage guestcontrol</div>
+</body>
+</html>

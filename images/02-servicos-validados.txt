@@ -1,0 +1,21 @@
+EVIDENCIA 02 - Validacao dos servicos alvo
+Data: 20/11/2026
+
+HTTP (Metasploitable 2):
+  GET http://192.168.56.101/  -> StatusCode 200
+  Trecho do HTML:
+    <html><head><title>Metasploitable2 - Linux</title></head><body>
+    <li><a href="/dvwa/">DVWA</a></li>
+
+FTP (vsFTPd):
+  Banner lido na porta 21:
+    220 (vsFTPd 2.3.4)
+  Teste de login anonimo:
+    > USER anonymous
+    331 Please specify the password.
+    > PASS anonymous@test.com
+    230 Login successful.
+    > SYST
+    215 UNIX Type: L8
+
+Conclusao: FTP aceita acesso anonimo e DVWA esta publicado em /dvwa/.
